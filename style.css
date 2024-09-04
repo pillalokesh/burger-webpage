@@ -1,0 +1,138 @@
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ body{
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-image: url(1.avif);
+   background-size: cover;
+   background-position: center;
+}
+.loki{ 
+   width: 65%;
+   height: 37em;
+   border: 2px solid rgb(124, 122, 122);
+   border-radius: 10px;
+   backdrop-filter: blur(2px);
+   color: white;
+   padding: 50px;
+   margin-left: 15%;
+   margin-top: 5%;
+   cursor: pointer;
+}
+.loki:hover{
+   box-shadow: 0px 5px 15px 5px rgb(243, 100, 100);
+}
+ .loki nav h1{
+   color: rgb(21, 178, 225);
+ }
+.loki h1:hover{
+   color: red;   
+   transform: translate(5px);
+   transition: 2s;
+}
+.loki ul li:hover{
+   color: blue;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+}
+ .loki nav ul{
+   display: flex;
+   gap: 30px;
+   list-style: none;
+   font-style: bold 2px;
+}
+.loki nav ul li  {
+   display: inline-block;
+   font-size: 20px;
+   position: relative;
+}
+ .loki nav ul li::after{
+   content: '';
+   width: 0;
+   height: 3px;
+   background-color: red;
+   position: absolute;
+   left: 0;
+   bottom: 6px;
+   transition: 1s;
+}
+ .loki nav ul li:hover::after{
+   width: 100%;
+}
+.loki2{
+   margin-top: 20%;
+   gap: 200px;
+}
+ 
+.loki3{
+   display: flex;
+   justify-content: space-around;
+}
+.loki3 h1:hover{
+   color: rgb(233, 112, 31);   
+   transform: translate(5px);
+   transition: 2s;
+}
+.loki3 p:hover{
+    
+      color: rgb(249, 93, 220);   
+      transform: translate(5px);
+      transition: 2s;
+      font-size: 20px;
+}
+ 
+.loki3 img{
+   margin-top: 70px;
+   margin-left: 10%;
+   border-radius: 80%;
+   height: 500px;
+   width: 400px;
+}
+.loki3 img:hover{
+   transform: translate(20px);
+   transition: 1.5s;
+
+}
+@media only screen and (max-width:800px){
+   .loki {
+      padding: 15px;
+      width: 80%;
+      height: 55rem;
+      margin-left: 10%;
+      cursor: pointer;
+   }
+   .loki nav h1{
+       font-size:15px
+   }
+   .loki nav ul li{
+      font-size: 15px;
+   }
+   .loki3{
+      flex-direction: column-reverse;
+
+   }
+   .loki3 img{
+      height: 300px;
+      width: 250px;
+   }
+   .loki nav ul li::after{
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: red;
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      transition: 1s;  
+   }
+   .loki nav ul li:hover::after{
+      width: 100%;
+   }
+   }
+    
